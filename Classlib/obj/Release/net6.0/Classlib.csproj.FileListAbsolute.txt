@@ -1,0 +1,12 @@
+F:\college\project\Classlib\bin\Release\net6.0\Classlib.deps.json
+F:\college\project\Classlib\bin\Release\net6.0\Classlib.dll
+F:\college\project\Classlib\bin\Release\net6.0\ref\Classlib.dll
+F:\college\project\Classlib\bin\Release\net6.0\Classlib.pdb
+F:\college\project\Classlib\obj\Release\net6.0\Classlib.csproj.AssemblyReference.cache
+F:\college\project\Classlib\obj\Release\net6.0\Classlib.GeneratedMSBuildEditorConfig.editorconfig
+F:\college\project\Classlib\obj\Release\net6.0\Classlib.AssemblyInfoInputs.cache
+F:\college\project\Classlib\obj\Release\net6.0\Classlib.AssemblyInfo.cs
+F:\college\project\Classlib\obj\Release\net6.0\Classlib.csproj.CoreCompileInputs.cache
+F:\college\project\Classlib\obj\Release\net6.0\Classlib.dll
+F:\college\project\Classlib\obj\Release\net6.0\ref\Classlib.dll
+F:\college\project\Classlib\obj\Release\net6.0\Classlib.pdb
