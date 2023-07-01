@@ -1,0 +1,30 @@
+@model ToDoModel;
+
+<form asp-action="Insert" id="Add-action" method="post" role="form">
+    <div asp-validation-summary="All"></div>
+
+    <label asp-for="todo.ToDoItemsId">Task Id:</label>
+    <input asp-for="todo.ToDoItemsId" />
+
+    <label asp-for="todo.Details">Task Information:</label>
+    <input asp-for="todo.Details" />
+    <br><br>
+
+    <label asp-for="todo.deadline">Task Deadline:</label>
+    <input asp-for="todo.deadline" />
+
+    <span asp-validation-for="todo.ToDoItemsId"></span>
+
+    <input type="submit" class="mybtn" id="Add_input" value="Add ToDo" />
+
+    <hr class="dashed">
+</form>
+
+<form asp-action="Delete" id="Delete-action" method="post" role="form">
+    <div asp-validation-summary="All"></div>
+    <label asp-for="todo.ToDoItemsId">Task Id:</label>
+    <input asp-for="todo.ToDoItemsId" />
+    <span asp-validation-for="todo.ToDoItemsId"></span>
+    <input type="submit" class="mybtn" id="Delete_input" value="Delete" />
+    <hr class="dashed">
+</form>

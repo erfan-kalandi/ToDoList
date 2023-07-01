@@ -1,0 +1,23 @@
+﻿@model ToDoModel
+
+<table class="table table-secondary table-striped table-bordered border-dark">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Information</th>
+            <th scope="col">Deadline</th>
+        </tr>
+    </thead>
+    <tbody >
+        <h3>ToDo List</h3>
+        @foreach (var t in Model.ItemsList)
+        {
+            <tr>
+            <td class="todos-column" width= '250px' scope="row">@t.ToDoItemsId</td>
+            <td class="todos-column" width= '720px'>@t.Details</td>
+            <td class="todos-column" width= '330px'>@t.deadline>
+            </td>
+            </tr>
+        }
+    </tbody>
+</table>

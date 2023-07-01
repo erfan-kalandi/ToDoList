@@ -1,0 +1,35 @@
+﻿<Window x:Class="wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf"
+        mc:Ignorable="d"
+        Title="ToDoList" Height="650" Width="800" ResizeMode="NoResize" FontSize="25" FontStyle = "Italic">
+<StackPanel Background = "Linen">
+        <DataGrid Height="250" HorizontalAlignment="Center" FontSize="20" RowHeight="50" ColumnWidth="230" IsReadOnly = "True"
+        Margin="12,21,0,0" Name="dataGrid" VerticalAlignment="Top" Width="700" BorderBrush="Black" BorderThickness="5"
+         HeadersVisibility="All"  CanUserResizeColumns="true" 
+        Background="#FFFFF5EE" RowBackground="#FFFFA500" AlternatingRowBackground="#FFF0E68C" SelectionMode="Single"/> 
+        
+        <StackPanel Background = "Linen" Orientation="Horizontal" >
+        <Label HorizontalAlignment = "Center"  Foreground="Maroon">Task  ------></Label>
+        <TextBox Name="ItemName" Width="250" Margin="155,6,0,6" Height="35" TextWrapping="Wrap"/>
+        </StackPanel>
+        
+        <StackPanel Background = "Linen" Orientation="Horizontal" >
+        <Label HorizontalAlignment = "Center"  Foreground="Maroon">Detail  ------></Label>
+        <TextBox Name="ItemDetails" Width="250" Margin="140,6,0,6" Height="150" TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <StackPanel Background = "Linen" Orientation="Horizontal" >
+        <Label HorizontalAlignment = "Center" Foreground="Maroon">Deadline  ------></Label>
+        <DatePicker   Name="dp1" Margin="130,6,0,6"  Height = "50" Width="200"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+        <Button  Click = "Add" Content = "Add" Margin="260,6,0,6" Width="150" Height="40" Background="DarkGoldenrod" VerticalAlignment="Center"/>        
+        <Button  Click = "Delete" Content = "Delete" Margin="5" Width="150" Height="40" Background="DarkGoldenrod" VerticalAlignment="Center"/>        
+</StackPanel>
+</StackPanel>
+</Window>

@@ -1,0 +1,1818 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ListApiCli</name>
+    </assembly>
+    <members>
+        <member name="T:ListApiCli.Api.IListApiSync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiSync.ListGet(System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>List&lt;ToDoItems&gt;</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiSync.ListGetWithHttpInfo(System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of List&lt;ToDoItems&gt;</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiSync.ListListAddItemPost(ListApiCli.Model.ToDoItems,System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="toDoItems"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiSync.ListListAddItemPostWithHttpInfo(ListApiCli.Model.ToDoItems,System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="toDoItems"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiSync.ListListDeleteIdiDelete(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="idi"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiSync.ListListDeleteIdiDeleteWithHttpInfo(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="idi"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiSync.ListListGetIdGet(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ToDoItems</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiSync.ListListGetIdGetWithHttpInfo(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of ToDoItems</returns>
+        </member>
+        <member name="T:ListApiCli.Api.IListApiAsync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiAsync.ListGetAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of List&lt;ToDoItems&gt;</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiAsync.ListGetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (List&lt;ToDoItems&gt;)</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiAsync.ListListAddItemPostAsync(ListApiCli.Model.ToDoItems,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="toDoItems"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiAsync.ListListAddItemPostWithHttpInfoAsync(ListApiCli.Model.ToDoItems,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="toDoItems"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiAsync.ListListDeleteIdiDeleteAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="idi"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiAsync.ListListDeleteIdiDeleteWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="idi"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiAsync.ListListGetIdGetAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ToDoItems</returns>
+        </member>
+        <member name="M:ListApiCli.Api.IListApiAsync.ListListGetIdGetWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (ToDoItems)</returns>
+        </member>
+        <member name="T:ListApiCli.Api.IListApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="T:ListApiCli.Api.ListApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Api.ListApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Api.ListApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.#ctor(ListApiCli.Client.Configuration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Api.ListApi"/> class
+            using Configuration object
+            </summary>
+            <param name="configuration">An instance of Configuration</param>
+            <returns></returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.#ctor(ListApiCli.Client.ISynchronousClient,ListApiCli.Client.IAsynchronousClient,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Api.ListApi"/> class
+            using a Configuration object and client instance.
+            </summary>
+            <param name="client">The client interface for synchronous API access.</param>
+            <param name="asyncClient">The client interface for asynchronous API access.</param>
+            <param name="configuration">The configuration object.</param>
+        </member>
+        <member name="P:ListApiCli.Api.ListApi.AsynchronousClient">
+            <summary>
+            The client for accessing this underlying API asynchronously.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Api.ListApi.Client">
+            <summary>
+            The client for accessing this underlying API synchronously.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.GetBasePath">
+            <summary>
+            Gets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="P:ListApiCli.Api.ListApi.Configuration">
+            <summary>
+            Gets or sets the configuration object
+            </summary>
+            <value>An instance of the Configuration</value>
+        </member>
+        <member name="P:ListApiCli.Api.ListApi.ExceptionFactory">
+            <summary>
+            Provides a factory method hook for the creation of exceptions.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListGet(System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>List&lt;ToDoItems&gt;</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListGetWithHttpInfo(System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of List&lt;ToDoItems&gt;</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListGetAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of List&lt;ToDoItems&gt;</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListGetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (List&lt;ToDoItems&gt;)</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListAddItemPost(ListApiCli.Model.ToDoItems,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="toDoItems"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListAddItemPostWithHttpInfo(ListApiCli.Model.ToDoItems,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="toDoItems"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListAddItemPostAsync(ListApiCli.Model.ToDoItems,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="toDoItems"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListAddItemPostWithHttpInfoAsync(ListApiCli.Model.ToDoItems,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="toDoItems"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListDeleteIdiDelete(System.String,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="idi"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListDeleteIdiDeleteWithHttpInfo(System.String,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="idi"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListDeleteIdiDeleteAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="idi"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListDeleteIdiDeleteWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="idi"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListGetIdGet(System.String,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ToDoItems</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListGetIdGetWithHttpInfo(System.String,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of ToDoItems</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListGetIdGetAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ToDoItems</returns>
+        </member>
+        <member name="M:ListApiCli.Api.ListApi.ListListGetIdGetWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:ListApiCli.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (ToDoItems)</returns>
+        </member>
+        <member name="T:ListApiCli.Client.CustomJsonCodec">
+            <summary>
+            Allows RestSharp to Serialize/Deserialize JSON using our custom logic, but only when ContentType is JSON.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.CustomJsonCodec.Serialize(System.Object)">
+            <summary>
+            Serialize the object into a JSON string.
+            </summary>
+            <param name="obj">Object to be serialized.</param>
+            <returns>A JSON string.</returns>
+        </member>
+        <member name="M:ListApiCli.Client.CustomJsonCodec.Deserialize(RestSharp.IRestResponse,System.Type)">
+            <summary>
+            Deserialize the JSON string into a proper object.
+            </summary>
+            <param name="response">The HTTP response.</param>
+            <param name="type">Object type.</param>
+            <returns>Object representation of the JSON string.</returns>
+        </member>
+        <member name="T:ListApiCli.Client.ApiClient">
+            <summary>
+            Provides a default implementation of an Api client (both synchronous and asynchronous implementations),
+            encapsulating general REST accessor use cases.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.ApiClient.SerializerSettings">
+            <summary>
+            Specifies the settings on a <see cref="T:Newtonsoft.Json.JsonSerializer" /> object.
+            These settings can be adjusted to accommodate custom serialization rules.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.ApiClient" />, defaulting to the global configurations' base url.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.ApiClient" />
+            </summary>
+            <param name="basePath">The target service's base path in URL format.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.Method(ListApiCli.Client.HttpMethod)">
+            <summary>
+            Constructs the RestSharp version of an http method
+            </summary>
+            <param name="method">Swagger Client Custom HttpMethod</param>
+            <returns>RestSharp's HttpMethod instance.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.NewRequest(ListApiCli.Client.HttpMethod,System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Provides all logic for constructing a new RestSharp <see cref="T:RestSharp.RestRequest"/>.
+            At this point, all information for querying the service is known. Here, it is simply
+            mapped into the RestSharp request.
+            </summary>
+            <param name="method">The http verb.</param>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>[private] A new RestRequest instance.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.GetAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP GET request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.PostAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP POST request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.PutAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP PUT request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.DeleteAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP DELETE request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.HeadAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP HEAD request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.OptionsAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP OPTION request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.PatchAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP PATCH request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.Get``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP GET request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.Post``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP POST request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.Put``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP PUT request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.Delete``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP DELETE request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.Head``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP HEAD request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.Options``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP OPTION request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ApiClient.Patch``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP PATCH request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="T:ListApiCli.Client.ApiException">
+            <summary>
+            API Exception
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.ApiException.ErrorCode">
+            <summary>
+            Gets or sets the error code (HTTP status code)
+            </summary>
+            <value>The error code (HTTP status code).</value>
+        </member>
+        <member name="P:ListApiCli.Client.ApiException.ErrorContent">
+            <summary>
+            Gets or sets the error content (body json object)
+            </summary>
+            <value>The error content (Http response body).</value>
+        </member>
+        <member name="P:ListApiCli.Client.ApiException.Headers">
+            <summary>
+            Gets or sets the HTTP headers
+            </summary>
+            <value>HTTP headers</value>
+        </member>
+        <member name="M:ListApiCli.Client.ApiException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.ApiException"/> class.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.ApiException.#ctor(System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.ApiException"/> class.
+            </summary>
+            <param name="errorCode">HTTP status code.</param>
+            <param name="message">Error message.</param>
+        </member>
+        <member name="M:ListApiCli.Client.ApiException.#ctor(System.Int32,System.String,System.Object,ListApiCli.Client.Multimap{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.ApiException"/> class.
+            </summary>
+            <param name="errorCode">HTTP status code.</param>
+            <param name="message">Error message.</param>
+            <param name="errorContent">Error content.</param>
+            <param name="headers">HTTP Headers.</param>
+        </member>
+        <member name="T:ListApiCli.Client.IApiResponse">
+            <summary>
+            Provides a non-generic contract for the ApiResponse wrapper.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.IApiResponse.ResponseType">
+            <summary>
+            The data type of <see cref="P:ListApiCli.Client.IApiResponse.Content"/>
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.IApiResponse.Content">
+            <summary>
+            The content of this response
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.IApiResponse.StatusCode">
+            <summary>
+            Gets or sets the status code (HTTP status code)
+            </summary>
+            <value>The status code.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IApiResponse.Headers">
+            <summary>
+            Gets or sets the HTTP headers
+            </summary>
+            <value>HTTP headers</value>
+        </member>
+        <member name="P:ListApiCli.Client.IApiResponse.ErrorText">
+            <summary>
+            Gets or sets any error text defined by the calling client.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.IApiResponse.Cookies">
+            <summary>
+            Gets or sets any cookies passed along on the response.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.IApiResponse.RawContent">
+            <summary>
+            The raw content of this response
+            </summary>
+        </member>
+        <member name="T:ListApiCli.Client.ApiResponse`1">
+            <summary>
+            API Response
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.ApiResponse`1.StatusCode">
+            <summary>
+            Gets or sets the status code (HTTP status code)
+            </summary>
+            <value>The status code.</value>
+        </member>
+        <member name="P:ListApiCli.Client.ApiResponse`1.Headers">
+            <summary>
+            Gets or sets the HTTP headers
+            </summary>
+            <value>HTTP headers</value>
+        </member>
+        <member name="P:ListApiCli.Client.ApiResponse`1.Data">
+            <summary>
+            Gets or sets the data (parsed HTTP body)
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="P:ListApiCli.Client.ApiResponse`1.ErrorText">
+            <summary>
+            Gets or sets any error text defined by the calling client.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.ApiResponse`1.Cookies">
+            <summary>
+            Gets or sets any cookies passed along on the response.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.ApiResponse`1.ResponseType">
+            <summary>
+            The content of this response
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.ApiResponse`1.Content">
+            <summary>
+            The data type of <see cref="P:ListApiCli.Client.ApiResponse`1.Content"/>
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.ApiResponse`1.RawContent">
+            <summary>
+            The raw content
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,ListApiCli.Client.Multimap{System.String,System.String},`0,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="headers">HTTP headers.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+            <param name="rawContent">Raw content.</param>
+        </member>
+        <member name="M:ListApiCli.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,ListApiCli.Client.Multimap{System.String,System.String},`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="headers">HTTP headers.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+        </member>
+        <member name="M:ListApiCli.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,`0,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+            <param name="rawContent">Raw content.</param>
+        </member>
+        <member name="M:ListApiCli.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+        </member>
+        <member name="T:ListApiCli.Client.ClientUtils">
+            <summary>
+            Utility functions providing some benefit to API client consumers.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.ClientUtils.SanitizeFilename(System.String)">
+            <summary>
+            Sanitize filename by removing the path
+            </summary>
+            <param name="filename">Filename</param>
+            <returns>Filename</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ClientUtils.ParameterToMultiMap(System.String,System.String,System.Object)">
+            <summary>
+            Convert params to key/value pairs.
+            Use collectionFormat to properly format lists and collections.
+            </summary>
+            <param name="collectionFormat">The swagger-supported collection format, one of: csv, tsv, ssv, pipes, multi</param>
+            <param name="name">Key name.</param>
+            <param name="value">Value object.</param>
+            <returns>A multimap of keys with 1..n associated values.</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ClientUtils.ParameterToString(System.Object,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            If parameter is DateTime, output in a formatted string (default ISO 8601), customizable with Configuration.DateTime.
+            If parameter is a list, join the list with ",".
+            Otherwise just return the string.
+            </summary>
+            <param name="obj">The parameter (header, path, query, form).</param>
+            <param name="configuration">An optional configuration instance, providing formatting options used in processing.</param>
+            <returns>Formatted string.</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ClientUtils.Base64Encode(System.String)">
+            <summary>
+            Encode string in base64 format.
+            </summary>
+            <param name="text">string to be encoded.</param>
+            <returns>Encoded string.</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ClientUtils.ReadAsBytes(System.IO.Stream)">
+            <summary>
+            Convert stream to byte array
+            </summary>
+            <param name="inputStream">Input stream to be converted</param>
+            <returns>Byte array</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ClientUtils.SelectHeaderContentType(System.String[])">
+            <summary>
+            Select the Content-Type header's value from the given content-type array:
+            if JSON type exists in the given array, use it;
+            otherwise use the first one defined in 'consumes'
+            </summary>
+            <param name="contentTypes">The Content-Type array to select from.</param>
+            <returns>The Content-Type header to use.</returns>
+        </member>
+        <member name="M:ListApiCli.Client.ClientUtils.SelectHeaderAccept(System.String[])">
+            <summary>
+            Select the Accept header's value from the given accepts array:
+            if JSON exists in the given array, use it;
+            otherwise use all of them (joining into a string)
+            </summary>
+            <param name="accepts">The accepts array to select from.</param>
+            <returns>The Accept header to use.</returns>
+        </member>
+        <member name="F:ListApiCli.Client.ClientUtils.JsonRegex">
+            <summary>
+            Provides a case-insensitive check that a provided content type is a known JSON-like content type.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.ClientUtils.IsJsonMime(System.String)">
+            <summary>
+            Check if the given MIME is a JSON MIME.
+            JSON MIME examples:
+               application/json
+               application/json; charset=UTF8
+               APPLICATION/JSON
+               application/vnd.company+json
+            </summary>
+            <param name="mime">MIME</param>
+            <returns>Returns True if MIME type is json.</returns>
+        </member>
+        <member name="T:ListApiCli.Client.Configuration">
+            <summary>
+            Represents a set of configuration settings
+            </summary>
+        </member>
+        <member name="F:ListApiCli.Client.Configuration.Version">
+            <summary>
+            Version of the package.
+            </summary>
+            <value>Version of the package.</value>
+        </member>
+        <member name="F:ListApiCli.Client.Configuration.ISO8601_DATETIME_FORMAT">
+            <summary>
+            Identifier for ISO 8601 DateTime Format
+            </summary>
+            <remarks>See https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx#Anchor_8 for more information.</remarks>
+        </member>
+        <member name="F:ListApiCli.Client.Configuration.DefaultExceptionFactory">
+            <summary>
+            Default creation of exceptions for a given method name and response object
+            </summary>
+        </member>
+        <member name="F:ListApiCli.Client.Configuration._basePath">
+            <summary>
+            Defines the base path of the target API server.
+            Example: http://localhost:3000/v1/
+            </summary>
+        </member>
+        <member name="F:ListApiCli.Client.Configuration._apiKey">
+            <summary>
+            Gets or sets the API key based on the authentication name.
+            This is the key and value comprising the "secret" for accessing an API.
+            </summary>
+            <value>The API key.</value>
+        </member>
+        <member name="F:ListApiCli.Client.Configuration._apiKeyPrefix">
+            <summary>
+            Gets or sets the prefix (e.g. Token) of the API key based on the authentication name.
+            </summary>
+            <value>The prefix of the API key.</value>
+        </member>
+        <member name="F:ListApiCli.Client.Configuration._servers">
+            <summary>
+            Gets or sets the servers defined in the OpenAPI spec.
+            </summary>
+            <value>The servers</value>
+        </member>
+        <member name="F:ListApiCli.Client.Configuration._operationServers">
+            <summary>
+            Gets or sets the operation servers defined in the OpenAPI spec.
+            </summary>
+            <value>The operation servers</value>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.Configuration" /> class
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.#ctor(System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.Configuration" /> class
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.BasePath">
+            <summary>
+            Gets or sets the base path for API access.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.DefaultHeader">
+            <summary>
+            Gets or sets the default header.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.DefaultHeaders">
+            <summary>
+            Gets or sets the default headers.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.Timeout">
+            <summary>
+            Gets or sets the HTTP timeout (milliseconds) of ApiClient. Default to 100000 milliseconds.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.Proxy">
+            <summary>
+            Gets or sets the proxy
+            </summary>
+            <value>Proxy.</value>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.UserAgent">
+            <summary>
+            Gets or sets the HTTP user agent.
+            </summary>
+            <value>Http user agent.</value>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.Username">
+            <summary>
+            Gets or sets the username (HTTP basic authentication).
+            </summary>
+            <value>The username.</value>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.Password">
+            <summary>
+            Gets or sets the password (HTTP basic authentication).
+            </summary>
+            <value>The password.</value>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.GetApiKeyWithPrefix(System.String)">
+            <summary>
+            Gets the API key with prefix.
+            </summary>
+            <param name="apiKeyIdentifier">API key identifier (authentication scheme).</param>
+            <returns>API key with prefix.</returns>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.ClientCertificates">
+            <summary>
+            Gets or sets certificate collection to be sent with requests.
+            </summary>
+            <value>X509 Certificate collection.</value>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.AccessToken">
+             <summary>
+             Gets or sets the access token for OAuth2 authentication.
+            
+             This helper property simplifies code generation.
+             </summary>
+             <value>The access token.</value>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.TempFolderPath">
+            <summary>
+            Gets or sets the temporary folder path to store the files downloaded from the server.
+            </summary>
+            <value>Folder path.</value>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.DateTimeFormat">
+            <summary>
+            Gets or sets the date time format used when serializing in the ApiClient
+            By default, it's set to ISO 8601 - "o", for others see:
+            https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx
+            and https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx
+            No validation is done to ensure that the string you're providing is valid
+            </summary>
+            <value>The DateTimeFormat string</value>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.ApiKeyPrefix">
+             <summary>
+             Gets or sets the prefix (e.g. Token) of the API key based on the authentication name.
+            
+             Whatever you set here will be prepended to the value defined in AddApiKey.
+            
+             An example invocation here might be:
+             <example>
+             ApiKeyPrefix["Authorization"] = "Bearer";
+             </example>
+             … where ApiKey["Authorization"] would then be used to set the value of your bearer token.
+            
+             <remarks>
+             OAuth2 workflows should set tokens via AccessToken.
+             </remarks>
+             </summary>
+             <value>The prefix of the API key.</value>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.ApiKey">
+            <summary>
+            Gets or sets the API key based on the authentication name.
+            </summary>
+            <value>The API key.</value>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.Servers">
+            <summary>
+            Gets or sets the servers.
+            </summary>
+            <value>The servers.</value>
+        </member>
+        <member name="P:ListApiCli.Client.Configuration.OperationServers">
+            <summary>
+            Gets or sets the operation servers.
+            </summary>
+            <value>The operation servers.</value>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.GetServerUrl(System.Int32)">
+            <summary>
+            Returns URL based on server settings without providing values
+            for the variables
+            </summary>
+            <param name="index">Array index of the server settings.</param>
+            <return>The server URL.</return>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.GetServerUrl(System.Int32,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Returns URL based on server settings.
+            </summary>
+            <param name="index">Array index of the server settings.</param>
+            <param name="inputVariables">Dictionary of the variables and the corresponding values.</param>
+            <return>The server URL.</return>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.GetOperationServerUrl(System.String,System.Int32)">
+            <summary>
+            Returns URL based on operation server settings.
+            </summary>
+            <param name="operation">Operation associated with the request path.</param>
+            <param name="index">Array index of the server settings.</param>
+            <return>The operation server URL.</return>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.GetOperationServerUrl(System.String,System.Int32,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Returns URL based on operation server settings.
+            </summary>
+            <param name="operation">Operation associated with the request path.</param>
+            <param name="index">Array index of the server settings.</param>
+            <param name="inputVariables">Dictionary of the variables and the corresponding values.</param>
+            <return>The operation server URL.</return>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.GetServerUrl(System.Collections.Generic.IList{System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object}},System.Int32,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Returns URL based on server settings.
+            </summary>
+            <param name="servers">Dictionary of server settings.</param>
+            <param name="index">Array index of the server settings.</param>
+            <param name="inputVariables">Dictionary of the variables and the corresponding values.</param>
+            <return>The server URL.</return>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.ToDebugReport">
+            <summary>
+            Returns a string with essential information for debugging.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.AddApiKey(System.String,System.String)">
+            <summary>
+            Add Api Key Header.
+            </summary>
+            <param name="key">Api Key name.</param>
+            <param name="value">Api Key value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.AddApiKeyPrefix(System.String,System.String)">
+            <summary>
+            Sets the API key prefix.
+            </summary>
+            <param name="key">Api Key name.</param>
+            <param name="value">Api Key value.</param>
+        </member>
+        <member name="M:ListApiCli.Client.Configuration.MergeConfigurations(ListApiCli.Client.IReadableConfiguration,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Merge configurations.
+            </summary>
+            <param name="first">First configuration.</param>
+            <param name="second">Second configuration.</param>
+            <return>Merged configuration.</return>
+        </member>
+        <member name="T:ListApiCli.Client.ExceptionFactory">
+            <summary>
+            A delegate to ExceptionFactory method
+            </summary>
+            <param name="methodName">Method name</param>
+            <param name="response">Response</param>
+            <returns>Exceptions</returns>
+        </member>
+        <member name="T:ListApiCli.Client.GlobalConfiguration">
+            <summary>
+            <see cref="T:ListApiCli.Client.GlobalConfiguration"/> provides a compile-time extension point for globally configuring
+            API Clients.
+            </summary>
+            <remarks>
+            A customized implementation via partial class may reside in another file and may
+            be excluded from automatic generation via a .openapi-generator-ignore file.
+            </remarks>
+        </member>
+        <member name="M:ListApiCli.Client.GlobalConfiguration.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:ListApiCli.Client.GlobalConfiguration.#ctor(System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:ListApiCli.Client.GlobalConfiguration.Instance">
+            <summary>
+            Gets or sets the default Configuration.
+            </summary>
+            <value>Configuration.</value>
+        </member>
+        <member name="T:ListApiCli.Client.HttpMethod">
+            <summary>
+            Http methods supported by swagger
+            </summary>
+        </member>
+        <member name="F:ListApiCli.Client.HttpMethod.Get">
+            <summary>HTTP GET request.</summary>
+        </member>
+        <member name="F:ListApiCli.Client.HttpMethod.Post">
+            <summary>HTTP POST request.</summary>
+        </member>
+        <member name="F:ListApiCli.Client.HttpMethod.Put">
+            <summary>HTTP PUT request.</summary>
+        </member>
+        <member name="F:ListApiCli.Client.HttpMethod.Delete">
+            <summary>HTTP DELETE request.</summary>
+        </member>
+        <member name="F:ListApiCli.Client.HttpMethod.Head">
+            <summary>HTTP HEAD request.</summary>
+        </member>
+        <member name="F:ListApiCli.Client.HttpMethod.Options">
+            <summary>HTTP OPTIONS request.</summary>
+        </member>
+        <member name="F:ListApiCli.Client.HttpMethod.Patch">
+            <summary>HTTP PATCH request.</summary>
+        </member>
+        <member name="T:ListApiCli.Client.IApiAccessor">
+            <summary>
+            Represents configuration aspects required to interact with the API endpoints.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.IApiAccessor.Configuration">
+            <summary>
+            Gets or sets the configuration object
+            </summary>
+            <value>An instance of the Configuration</value>
+        </member>
+        <member name="M:ListApiCli.Client.IApiAccessor.GetBasePath">
+            <summary>
+            Gets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="P:ListApiCli.Client.IApiAccessor.ExceptionFactory">
+            <summary>
+            Provides a factory method hook for the creation of exceptions.
+            </summary>
+        </member>
+        <member name="T:ListApiCli.Client.IAsynchronousClient">
+             <summary>
+             Contract for Asynchronous RESTful API interactions.
+            
+             This interface allows consumers to provide a custom API accessor client.
+             </summary>
+        </member>
+        <member name="M:ListApiCli.Client.IAsynchronousClient.GetAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the GET http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.IAsynchronousClient.PostAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the POST http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.IAsynchronousClient.PutAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the PUT http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.IAsynchronousClient.DeleteAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the DELETE http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.IAsynchronousClient.HeadAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the HEAD http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.IAsynchronousClient.OptionsAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the OPTIONS http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.IAsynchronousClient.PatchAsync``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the PATCH http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="T:ListApiCli.Client.IReadableConfiguration">
+            <summary>
+            Represents a readable-only configuration contract.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.AccessToken">
+            <summary>
+            Gets the access token.
+            </summary>
+            <value>Access token.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.ApiKey">
+            <summary>
+            Gets the API key.
+            </summary>
+            <value>API key.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.ApiKeyPrefix">
+            <summary>
+            Gets the API key prefix.
+            </summary>
+            <value>API key prefix.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.BasePath">
+            <summary>
+            Gets the base path.
+            </summary>
+            <value>Base path.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.DateTimeFormat">
+            <summary>
+            Gets the date time format.
+            </summary>
+            <value>Date time format.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.DefaultHeader">
+            <summary>
+            Gets the default header.
+            </summary>
+            <value>Default header.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.DefaultHeaders">
+            <summary>
+            Gets the default headers.
+            </summary>
+            <value>Default headers.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.TempFolderPath">
+            <summary>
+            Gets the temp folder path.
+            </summary>
+            <value>Temp folder path.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.Timeout">
+            <summary>
+            Gets the HTTP connection timeout (in milliseconds)
+            </summary>
+            <value>HTTP connection timeout.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.Proxy">
+            <summary>
+            Gets the proxy.
+            </summary>
+            <value>Proxy.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.UserAgent">
+            <summary>
+            Gets the user agent.
+            </summary>
+            <value>User agent.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.Username">
+            <summary>
+            Gets the username.
+            </summary>
+            <value>Username.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.Password">
+            <summary>
+            Gets the password.
+            </summary>
+            <value>Password.</value>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.OperationServers">
+            <summary>
+            Get the servers associated with the operation.
+            </summary>
+            <value>Operation servers.</value>
+        </member>
+        <member name="M:ListApiCli.Client.IReadableConfiguration.GetApiKeyWithPrefix(System.String)">
+            <summary>
+            Gets the API key with prefix.
+            </summary>
+            <param name="apiKeyIdentifier">API key identifier (authentication scheme).</param>
+            <returns>API key with prefix.</returns>
+        </member>
+        <member name="M:ListApiCli.Client.IReadableConfiguration.GetOperationServerUrl(System.String,System.Int32)">
+            <summary>
+            Gets the Operation server url at the provided index.
+            </summary>
+            <param name="operation">Operation server name.</param>
+            <param name="index">Index of the operation server settings.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ListApiCli.Client.IReadableConfiguration.ClientCertificates">
+            <summary>
+            Gets certificate collection to be sent with requests.
+            </summary>
+            <value>X509 Certificate collection.</value>
+        </member>
+        <member name="T:ListApiCli.Client.ISynchronousClient">
+             <summary>
+             Contract for Synchronous RESTful API interactions.
+            
+             This interface allows consumers to provide a custom API accessor client.
+             </summary>
+        </member>
+        <member name="M:ListApiCli.Client.ISynchronousClient.Get``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the GET http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.ISynchronousClient.Post``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the POST http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.ISynchronousClient.Put``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the PUT http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.ISynchronousClient.Delete``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the DELETE http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.ISynchronousClient.Head``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the HEAD http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.ISynchronousClient.Options``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the OPTIONS http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:ListApiCli.Client.ISynchronousClient.Patch``1(System.String,ListApiCli.Client.RequestOptions,ListApiCli.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the PATCH http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:ListApiCli.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="T:ListApiCli.Client.Multimap`2">
+            <summary>
+            A dictionary in which one key has many associated values.
+            </summary>
+            <typeparam name="TKey">The type of the key</typeparam>
+            <typeparam name="TValue">The type of the value associated with the key.</typeparam>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.#ctor">
+            <summary>
+            Empty Constructor.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Constructor with comparer.
+            </summary>
+            <param name="comparer"></param>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.GetEnumerator">
+            <summary>
+            To get the enumerator.
+            </summary>
+            <returns>Enumerator</returns>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            To get the enumerator.
+            </summary>
+            <returns>Enumerator</returns>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.Add(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}})">
+            <summary>
+            Add values to Multimap
+            </summary>
+            <param name="item">Key value pair</param>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.Add(ListApiCli.Client.Multimap{`0,`1})">
+            <summary>
+            Add Multimap to Multimap
+            </summary>
+            <param name="multimap">Multimap</param>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.Clear">
+            <summary>
+            Clear Multimap
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.Contains(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}})">
+            <summary>
+            Determines whether Multimap contains the specified item.
+            </summary>
+            <param name="item">Key value pair</param>
+            <exception cref="T:System.NotImplementedException">Method needs to be implemented</exception>
+            <returns>true if the Multimap contains the item; otherwise, false.</returns>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}}[],System.Int32)">
+            <summary>
+             Copy items of the Multimap to an array,
+                starting at a particular array index.
+            </summary>
+            <param name="array">The array that is the destination of the items copied
+                from Multimap. The array must have zero-based indexing.</param>
+            <param name="arrayIndex">The zero-based index in array at which copying begins.</param>
+            <exception cref="T:System.NotImplementedException">Method needs to be implemented</exception>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.Remove(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}})">
+            <summary>
+            Removes the specified item from the Multimap.
+            </summary>
+            <param name="item">Key value pair</param>
+            <returns>true if the item is successfully removed; otherwise, false.</returns>
+            <exception cref="T:System.NotImplementedException">Method needs to be implemented</exception>
+        </member>
+        <member name="P:ListApiCli.Client.Multimap`2.Count">
+            <summary>
+            Gets the number of items contained in the Multimap.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.Multimap`2.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the Multimap is read-only.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.Add(`0,System.Collections.Generic.IList{`1})">
+            <summary>
+            Adds an item with the provided key and value to the Multimap.
+            </summary>
+            <param name="key">The object to use as the key of the item to add.</param>
+            <param name="value">The object to use as the value of the item to add.</param>
+            <exception cref="T:System.InvalidOperationException">Thrown when couldn't add the value to Multimap.</exception>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.ContainsKey(`0)">
+            <summary>
+            Determines whether the Multimap contains an item with the specified key.
+            </summary>
+            <param name="key">The key to locate in the Multimap.</param>
+            <returns>true if the Multimap contains an item with
+                the key; otherwise, false.</returns>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.Remove(`0)">
+            <summary>
+            Removes item with the specified key from the Multimap.
+            </summary>
+            <param name="key">The key to locate in the Multimap.</param>
+            <returns>true if the item is successfully removed; otherwise, false.</returns>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.TryGetValue(`0,System.Collections.Generic.IList{`1}@)">
+            <summary>
+            Gets the value associated with the specified key.
+            </summary>
+            <param name="key">The key whose value to get.</param>
+            <param name="value">When this method returns, the value associated with the specified key, if the
+                key is found; otherwise, the default value for the type of the value parameter.
+                This parameter is passed uninitialized.</param>
+            <returns> true if the object that implements Multimap contains
+                an item with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="P:ListApiCli.Client.Multimap`2.Item(`0)">
+            <summary>
+            Gets or sets the item with the specified key.
+            </summary>
+            <param name="key">The key of the item to get or set.</param>
+            <returns>The value of the specified key.</returns>
+        </member>
+        <member name="P:ListApiCli.Client.Multimap`2.Keys">
+            <summary>
+            Gets a System.Collections.Generic.ICollection containing the keys of the Multimap.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.Multimap`2.Values">
+            <summary>
+            Gets a System.Collections.Generic.ICollection containing the values of the Multimap.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.CopyTo(System.Array,System.Int32)">
+            <summary>
+             Copy the items of the Multimap to an System.Array,
+                starting at a particular System.Array index.
+            </summary>
+            <param name="array">The one-dimensional System.Array that is the destination of the items copied
+                from Multimap. The System.Array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.Add(`0,`1)">
+            <summary>
+            Adds an item with the provided key and value to the Multimap.
+            </summary>
+            <param name="key">The object to use as the key of the item to add.</param>
+            <param name="value">The object to use as the value of the item to add.</param>
+            <exception cref="T:System.InvalidOperationException">Thrown when couldn't add value to Multimap.</exception>
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.TryRemove(`0,System.Collections.Generic.IList{`1}@)">
+            Helper method to encapsulate generator differences between dictionary types.
+        </member>
+        <member name="M:ListApiCli.Client.Multimap`2.TryAdd(`0,System.Collections.Generic.IList{`1})">
+            Helper method to encapsulate generator differences between dictionary types.
+        </member>
+        <member name="T:ListApiCli.Client.OpenAPIDateConverter">
+            <summary>
+            Formatter for 'date' openapi formats ss defined by full-date - RFC3339
+            see https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#data-types
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.OpenAPIDateConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Client.OpenAPIDateConverter" /> class.
+            </summary>
+        </member>
+        <member name="T:ListApiCli.Client.RequestOptions">
+            <summary>
+            A container for generalized request inputs. This type allows consumers to extend the request functionality
+            by abstracting away from the default (built-in) request framework (e.g. RestSharp).
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RequestOptions.PathParameters">
+            <summary>
+            Parameters to be bound to path parts of the Request's URL
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RequestOptions.QueryParameters">
+            <summary>
+            Query parameters to be applied to the request.
+            Keys may have 1 or more values associated.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RequestOptions.HeaderParameters">
+            <summary>
+            Header parameters to be applied to to the request.
+            Keys may have 1 or more values associated.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RequestOptions.FormParameters">
+            <summary>
+            Form parameters to be sent along with the request.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RequestOptions.FileParameters">
+            <summary>
+            File parameters to be sent along with the request.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RequestOptions.Cookies">
+            <summary>
+            Cookies to be sent along with the request.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RequestOptions.Operation">
+            <summary>
+            Operation associated with the request path.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RequestOptions.OperationIndex">
+            <summary>
+            Index associated with the operation.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RequestOptions.Data">
+            <summary>
+            Any data associated with a request body.
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Client.RequestOptions.#ctor">
+            <summary>
+            Constructs a new instance of <see cref="T:ListApiCli.Client.RequestOptions"/>
+            </summary>
+        </member>
+        <member name="T:ListApiCli.Client.RetryConfiguration">
+            <summary>
+            Configuration class to set the polly retry policies to be applied to the requests.
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RetryConfiguration.RetryPolicy">
+            <summary>
+            Retry policy
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Client.RetryConfiguration.AsyncRetryPolicy">
+            <summary>
+            Async retry policy
+            </summary>
+        </member>
+        <member name="T:ListApiCli.Model.AbstractOpenAPISchema">
+            <summary>
+             Abstract base class for oneOf, anyOf schemas in the OpenAPI specification
+            </summary>
+        </member>
+        <member name="F:ListApiCli.Model.AbstractOpenAPISchema.SerializerSettings">
+            <summary>
+             Custom JSON serializer
+            </summary>
+        </member>
+        <member name="F:ListApiCli.Model.AbstractOpenAPISchema.AdditionalPropertiesSerializerSettings">
+            <summary>
+             Custom JSON serializer for objects with additional properties
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Model.AbstractOpenAPISchema.ActualInstance">
+            <summary>
+            Gets or Sets the actual instance
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Model.AbstractOpenAPISchema.IsNullable">
+            <summary>
+            Gets or Sets IsNullable to indicate whether the instance is nullable
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Model.AbstractOpenAPISchema.SchemaType">
+            <summary>
+            Gets or Sets the schema type, which can be either `oneOf` or `anyOf`
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Model.AbstractOpenAPISchema.ToJson">
+            <summary>
+            Converts the instance into JSON string.
+            </summary>
+        </member>
+        <member name="T:ListApiCli.Model.ToDoItems">
+            <summary>
+            ToDoItems
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Model.ToDoItems.#ctor(System.String,System.String,System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ListApiCli.Model.ToDoItems" /> class.
+            </summary>
+            <param name="toDoItemsId">toDoItemsId.</param>
+            <param name="details">details.</param>
+            <param name="deadline">deadline.</param>
+        </member>
+        <member name="P:ListApiCli.Model.ToDoItems.ToDoItemsId">
+            <summary>
+            Gets or Sets ToDoItemsId
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Model.ToDoItems.Details">
+            <summary>
+            Gets or Sets Details
+            </summary>
+        </member>
+        <member name="P:ListApiCli.Model.ToDoItems.Deadline">
+            <summary>
+            Gets or Sets Deadline
+            </summary>
+        </member>
+        <member name="M:ListApiCli.Model.ToDoItems.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:ListApiCli.Model.ToDoItems.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:ListApiCli.Model.ToDoItems.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:ListApiCli.Model.ToDoItems.Equals(ListApiCli.Model.ToDoItems)">
+            <summary>
+            Returns true if ToDoItems instances are equal
+            </summary>
+            <param name="input">Instance of ToDoItems to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:ListApiCli.Model.ToDoItems.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:ListApiCli.Model.ToDoItems.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+    </members>
+</doc>
